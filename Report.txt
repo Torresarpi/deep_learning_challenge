@@ -1,0 +1,19 @@
+Overview
+The purpose of this analysis is to create an algorithm which can identify which candidates Alphabet Soup can fund that will have the greatest chances of success if given funding. 
+
+
+Results:
+Target: Is_successful
+Features: Application_Type,affiliation, Classification, Use_case, organization, staus, income_amt,special considerations, ask_amt
+Removed:ID and Name
+
+
+I used 3 layers with 100 65 and 40 neurons respectively using tanh activation
+
+After multiple tries I was unable to break 75%
+
+I added a layer, changed the activation function, increased the number of neurons and added dropthrough layers
+
+Summary:
+
+Overall, a regression model would be more suited for this task. Neural Networks are excellent at finding results with more complicatd data such as audio or image-based data, but can be overcomplicated, and unnecessarily slow for a task such as this one, which can even be done with old fashioned hand-done regression algorithms
